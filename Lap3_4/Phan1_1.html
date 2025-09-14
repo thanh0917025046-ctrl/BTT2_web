@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hồ sơ cá nhân</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+    section {
+      background: white;
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    h1 {
+      margin: 10px 0 5px;
+      font-size: 20px;
+    }
+    .title {
+      color: gray;
+      margin-bottom: 15px;
+    }
+    .info {
+      text-align: left;
+      margin-bottom: 15px;
+    }
+    .row {
+      margin: 5px 0;
+    }
+    .label {
+      font-weight: bold;
+    }
+    .cta {
+      display: inline-block;
+      padding: 8px 16px;
+      background: dodgerblue;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+    /* Danh sách môn học */
+    #joy {
+      padding: 0;
+      margin-top: 15px;
+      list-style: none;
+    }
+    #joy li {
+      padding: 8px;
+      margin: 4px 0;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    table {
+      width: 90%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      background: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+      text-align: left;
+    }
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    .btn-submit {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      background: dodgerblue;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .btn-submit:hover {
+      background: darkblue;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: white;
+      padding: 12px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    .navbar a {
+      text-decoration: none;
+      color: dodgerblue;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .navbar a:hover {
+      color: darkblue;
+    }
+    .navbar a:active {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <section class="navbar">
+    <a href="#hoso">Trang chủ</a>
+    <a href="#monhoc">Môn học</a>
+    <a href="#thoikhoabieu">Thời khóa biểu</a>
+    <a href="#dangky">Đăng ký</a>
+  </section>
+
+  <!-- Hồ sơ cá nhân -->
+  <section id = "hoso">
+    <img class="avatar" src="/NTDT_23733811_web_2/minhchung/Capture.PNG" alt="Ảnh đại diện">
+    <h1>Nguyen Trung Dat Thanh</h1>
+    <div class="title">Sinh viên khoa CNTT</div>
+
+    <div class="info">
+      <div class="row"><span class="label">
+      <div class="row"><span class="label">Giới tính:</span> Nam</div>
+      <div class="row"><span class="label">Quốc tịch:</span> Việt Nam</div>
+     
+      
+    </div>
+
+    <a class="cta" href="mailto:th">Liên hệ</a>
+  </section>
+
+  <!-- Môn học yêu thích -->
+  <section id="monhoc">
+    <h2>Môn học yêu thích</h2>
+    <ul id="joy">
+      <li>Toán cao cấp</li>
+      <li>Logic học</li>
+      <li>Mạng máy tính</li>
+    </ul>
+  </section>
+
+  <!-- Thời khóa biểu -->
+  <section id="thoikhoabieu">
+    <h2>Thời khoá biểu</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Thứ</th>
+          <th>Môn học</th>
+          <th>Thời gian</th>
+          <th>Phòng</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Thứ 2</td>
+          <td>Toán cao cấp</td>
+          <td>7:30 - 9:30</td>
+          <td>A101</td>
+        </tr>
+        <tr>
+          <td>Thứ 3</td>
+          <td>Logic học</td>
+          <td>9:45 - 11:45</td>
+          <td>B202</td>
+        </tr>
+        <tr>
+          <td>Thứ 4</td>
+          <td>Mạng máy tính</td>
+          <td>13:30 - 15:30</td>
+          <td>C303</td>
+        </tr>
+        <tr>
+          <td>Thứ 5</td>
+          <td>Lập trình C++</td>
+          <td>15:45 - 17:45</td>
+          <td>D404</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Form đăng ký -->
+  <section id="dangky">
+    <h2>Đăng ký thông tin</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Họ và tên</label>
+        <input type="text" id="name" name="name" placeholder="Nhập họ và tên" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Nhập email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Số điện thoại</label>
+        <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại" required>
+      </div>
+
+      <div class="form-group">
+        <label>Giới tính</label>
+        <select name="gender" id="gender">
+          <option value="nu">Nữ</option>
+          <option value="nam">Nam</option>
+          <option value="khac">Khác</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn-submit">Gửi thông tin</button>
+    </form>
+  </section>
+</body>
+</html>
